@@ -61,6 +61,15 @@ NODE_CLASS_MAPPINGS = {
     _n("Conditioning_area_scale_by_ratio"): St_CondNodes.ConditioningAreaScale_Ratio,
 }
 
+NODE_CLASS_MAPPINGS.update({
+    _n("Tuple"): TupleNodes.Tuple,                                  # Takes floats into Tuple
+    # _n("Int_to_tuple"): TupleNodes.Int2Tuple,                       # Takes ints into Tuple
+    # _n("Tuple_to_floats"): TupleNodes.Tuple2Float,                  # Return 2 floats from Tuple
+    # _n("Tuple_to_ints"): TupleNodes.Tuple2Int,                      # Return 2 ints from Tuple
+    # _n("Tuple_swap"): TupleNodes.FlipTuple,                         # Swap Values in tuple
+    _n("Tuple_multiply"): TupleNodes.MultiplyTupleBy,
+})
+
 WEB_DIRECTORY = "./scripts"
 NODE_DISPLAY_NAME_MAPPINGS = {k: k.replace(_ident, "").replace("_", " ") for k in NODE_CLASS_MAPPINGS}
 
