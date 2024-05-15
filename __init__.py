@@ -12,6 +12,7 @@ from .pyscripts.Nodes.Debug import Debug as DebugNodes
 from .pyscripts.Nodes.Functions import Converters as ConvNodes
 from .pyscripts.Nodes.Functions import GetSizes as GetSizes
 from .pyscripts.Nodes.Functions import Random as RandNodes
+from .pyscripts.Nodes.Functions import Tuples as TupleNodes
 from .pyscripts.Nodes.Functions import Strings as StringNodes
 
 from .pyscripts.Nodes.Math import SimpleMath as SMath
